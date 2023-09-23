@@ -40,7 +40,7 @@ final class ViewController: UIViewController {
     }
     
     func refreshTitle() {
-        monthAndYearButton.setTitle(dateService.titleText, for: .normal)
+        monthAndYearButton.setAttributedTitle(NSAttributedString(string: dateService.titleText,attributes: [.font: UIFont.systemFont(ofSize: 16, weight: .bold)]), for: .normal)
     }
     
     // MARK: - Actions
@@ -79,7 +79,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let calendarDate = dateService.getCalendarDate(indexPath)
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarDayCVC", for: indexPath) as! CalendarDayCVC
-        cell.setup(calendarDate.date.day(), inThisMonth: calendarDate.calendarMonth == .Current, selected: calendarDate.date.isEqual(selectedDate))
+        cell.setup(calendarDate, selected: calendarDate.date.isEqual(selectedDate))
         return cell
     }
     

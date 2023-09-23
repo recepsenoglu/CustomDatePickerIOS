@@ -30,7 +30,7 @@ class DateService {
         self.date = date.updateDay()
     }
     
-    func getCalendarDate(_ indexPath: IndexPath) -> (date: Date, calendarMonth: CalendarMonth) {
+    func getCalendarDate(_ indexPath: IndexPath) -> CalendarDate {
         let weekday = date.weekday()
         let index = indexPath.section * 7 + indexPath.row
         let dayCountOfMonth = date.dayCountOfMonth()
@@ -47,7 +47,7 @@ class DateService {
             dateOfIndex = dateOfIndex.addMonth(1)
         }
         dateOfIndex = dateOfIndex.updateDay(day)
-        return (date: dateOfIndex, calendarMonth: calendarMonth)
+        return CalendarDate(date: dateOfIndex, calendarMonth: calendarMonth)
     }
     
     func daySelected(_ indexPath: IndexPath) -> Date {

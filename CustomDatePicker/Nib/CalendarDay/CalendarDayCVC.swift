@@ -16,11 +16,15 @@ class CalendarDayCVC: UICollectionViewCell {
     
     // MARK: - Functions
     
-    func setup(_ day: Int, inThisMonth: Bool, selected: Bool) {
-        backgroundUIView.backgroundColor = selected ? UIColor.blue : UIColor.clear
-        dayNumberLabel.text = String(day)
-        let textColor = selected ? UIColor.white : inThisMonth ? UIColor.black : UIColor.gray
+    func setup(_ calendarDate: CalendarDate, selected: Bool) {
+        let blueColor = UIColor(named: "BlueColor") ?? UIColor.blue
+        let lightBlueColor = UIColor(named: "LightBlueColor") ?? UIColor.systemBlue
+        let today = calendarDate.date.isEqual(Date.now)
+        let inThisMonth = calendarDate.calendarMonth == .Current
+        backgroundUIView.backgroundColor = selected ? today ? blueColor : lightBlueColor : UIColor.clear
+        dayNumberLabel.text = String(calendarDate.date.day())
+        let textColor = selected ? today ? UIColor.white : blueColor : today ? blueColor : inThisMonth ? UIColor.black : UIColor.lightGray
         dayNumberLabel.textColor = textColor
-        dayNumberLabel.font = UIFont.systemFont(ofSize: 16, weight: .medium)
+        dayNumberLabel.font = UIFont.systemFont(ofSize: 17, weight: .medium)
     }
 }

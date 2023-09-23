@@ -19,6 +19,7 @@
 		CEE0116E2ABD8FBC00C68803 /* CalendarDayFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0116D2ABD8FBC00C68803 /* CalendarDayFlowLayout.swift */; };
 		CEE011712ABDA2FB00C68803 /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE011702ABDA2FB00C68803 /* DateService.swift */; };
 		CEE011732ABDA47300C68803 /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE011722ABDA47200C68803 /* Extension+Date.swift */; };
+		CEE011762ABF0C5400C68803 /* CalendarDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE011752ABF0C5400C68803 /* CalendarDate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		CEE0116D2ABD8FBC00C68803 /* CalendarDayFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDayFlowLayout.swift; sourceTree = "<group>"; };
 		CEE011702ABDA2FB00C68803 /* DateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
 		CEE011722ABDA47200C68803 /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
+		CEE011752ABF0C5400C68803 /* CalendarDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		CEE0114F2ABD7EE200C68803 /* CustomDatePicker */ = {
 			isa = PBXGroup;
 			children = (
+				CEE011742ABF0C4600C68803 /* Model */,
 				CEE0116F2ABDA2E700C68803 /* Utils */,
 				CEE0116A2ABD8DC400C68803 /* Extension */,
 				CEE011642ABD8AFA00C68803 /* Nib */,
@@ -115,6 +118,14 @@
 				CEE011702ABDA2FB00C68803 /* DateService.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		CEE011742ABF0C4600C68803 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEE011752ABF0C5400C68803 /* CalendarDate.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +207,7 @@
 				CEE0116E2ABD8FBC00C68803 /* CalendarDayFlowLayout.swift in Sources */,
 				CEE011732ABDA47300C68803 /* Extension+Date.swift in Sources */,
 				CEE011712ABDA2FB00C68803 /* DateService.swift in Sources */,
+				CEE011762ABF0C5400C68803 /* CalendarDate.swift in Sources */,
 				CEE0116C2ABD8DDB00C68803 /* Extension+UICollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
