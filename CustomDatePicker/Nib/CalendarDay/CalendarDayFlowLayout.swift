@@ -11,7 +11,7 @@ class CalendarDayFlowLayout: UICollectionViewFlowLayout {
     
     override init() {
         super.init()
-        minimumLineSpacing = 10
+        minimumLineSpacing = 0
         minimumInteritemSpacing = 0
     }
     
@@ -24,7 +24,9 @@ class CalendarDayFlowLayout: UICollectionViewFlowLayout {
         guard let collectionView = collectionView else { return }
         let spacings = collectionView.safeAreaInsets.left + collectionView.safeAreaInsets.right + minimumInteritemSpacing * 6
         let width = (collectionView.bounds.width - spacings) / 7
-        let height = 40 + minimumLineSpacing
+        let sectionCount = CGFloat(collectionView.numberOfSections)
+        let verticalSpacings = collectionView.safeAreaInsets.top + collectionView.safeAreaInsets.bottom + minimumLineSpacing * (sectionCount - 1)
+        let height = (collectionView.bounds.height - verticalSpacings) / sectionCount
         itemSize = CGSize(width: width, height: height)
     }
 }
