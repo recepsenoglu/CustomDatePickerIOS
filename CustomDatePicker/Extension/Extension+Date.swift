@@ -58,12 +58,14 @@ extension Date {
         return weekday == 1 ? 7 : weekday - 1
     }
     
-    func resetMonth() -> Date {
+    func updateDay(_ value: Int = 1) -> Date {
         let calendar = Calendar.current
         var dateComponents = DateComponents()
-        dateComponents.day = -(self.day() - 1)
+        dateComponents.day = -(self.day()) + value
         return calendar.date(byAdding: dateComponents, to: self) ?? self
     }
     
-
+    func isEqual(_ date: Date?) -> Bool {
+        return self.toString() == date?.toString()
+    }
 }

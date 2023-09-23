@@ -29,19 +29,18 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         calendarCV.setup("CalendarDayCVC", CalendarDayFlowLayout())
-        monthAndYearButton.titleLabel?.text = dateService.titleText
+        refreshTitle()
     }
 
     // MARK: - Functions
     
     func reloadValues() {
-        monthAndYearButton.titleLabel?.text = dateService.titleText
+        refreshTitle()
         calendarCV.reloadData()
     }
     
     func refreshTitle() {
-        monthAndYearButton.titleLabel?.text = dateService.titleText
-        monthAndYearButton.titleLabel?.textAlignment = .center
+        monthAndYearButton.setTitle(dateService.titleText, for: .normal)
     }
     
     // MARK: - Actions
@@ -57,16 +56,13 @@ final class ViewController: UIViewController {
     @IBAction private func chooseMonthAndYearButton_TUI(_ sender: Any) {
         refreshTitle()
         selectDateMode = !selectDateMode
+        if selectDateMode { datePicker.date = dateService.date }
         calendarCV.isHidden = selectDateMode
         previousMonthButton.isHidden = selectDateMode
         nextMonthButton.isHidden = selectDateMode
         daysStackView.isHidden = selectDateMode
         datePicker.isHidden = !selectDateMode
-        
-        if !selectDateMode {
-            dateService.updateDate(datePicker.date)
-            reloadValues()
-        }
+        if !selectDateMode { reloadValues() }
     }
     
     @IBAction func datePicker_ValueChanged(_ sender: UIDatePicker) {
@@ -81,9 +77,14 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { 7 }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let calendarDay = dateService.getCalendarDay(indexPath)
+        let calendarDate = dateService.getCalendarDate(indexPath)
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarDayCVC", for: indexPath) as! CalendarDayCVC
-        cell.setup(calendarDay.day, inThisMonth: calendarDay.isInThisMonth, selected: false)
+        cell.setup(calendarDate.date.day(), inThisMonth: calendarDate.calendarMonth == .Current, selected: calendarDate.date.isEqual(selectedDate))
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedDate = dateService.daySelected(indexPath)
+        reloadValues()
     }
 }
