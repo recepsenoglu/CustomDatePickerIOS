@@ -10,9 +10,11 @@ import Foundation
 struct CalendarDate {
     var date: Date
     var calendarMonth: CalendarMonth
+    var available: Bool
     
-    init(date: Date, calendarMonth: CalendarMonth) {
+    init(date: Date, calendarMonth: CalendarMonth, available: Bool = true) {
         self.date = date
         self.calendarMonth = calendarMonth
+        self.available = available
     }
 }

@@ -16,43 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="LCK-CP-sUE">
-                                <rect key="frame" x="16" y="59" width="362" height="34"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="pXq-Wn-UgQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="39.666666666666664" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
-                                        <connections>
-                                            <action selector="previousMonthButton_TUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fsu-BI-895"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="gme-8g-uye">
-                                        <rect key="frame" x="117" y="0.0" width="128" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="$month $year" titleAlignment="center">
-                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="16"/>
-                                            <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="chooseMonthAndYearButton_TUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xb-nS-L8h"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="J13-IU-94v">
-                                        <rect key="frame" x="322.33333333333331" y="0.0" width="39.666666666666686" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
-                                        <connections>
-                                            <action selector="nextMonthButton_TUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GKD-we-2eu"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kiQ-1Y-aCa">
-                                <rect key="frame" x="16" y="131" width="362" height="270"/>
+                                <rect key="frame" x="15.333333333333343" y="128" width="361.66666666666663" height="270"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="270" id="ffx-LL-MKG"/>
@@ -70,7 +35,7 @@
                                 </connections>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VKr-vD-Xlb">
-                                <rect key="frame" x="16" y="103" width="362" height="18"/>
+                                <rect key="frame" x="15.333333333333343" y="102" width="361.66666666666663" height="18"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsP-Ag-1K1">
                                         <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="18"/>
@@ -93,28 +58,28 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cHx-dF-Zqu">
-                                        <rect key="frame" x="155" y="0.0" width="52" height="18"/>
+                                        <rect key="frame" x="155" y="0.0" width="51.666666666666657" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="V99-Ii-0Um">
-                                        <rect key="frame" x="207" y="0.0" width="51.666666666666686" height="18"/>
+                                        <rect key="frame" x="206.66666666666666" y="0.0" width="51.666666666666657" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DBY-4y-KGO">
-                                        <rect key="frame" x="258.66666666666669" y="0.0" width="51.666666666666686" height="18"/>
+                                        <rect key="frame" x="258.33333333333331" y="0.0" width="51.666666666666686" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xKp-PC-ltP">
-                                        <rect key="frame" x="310.33333333333331" y="0.0" width="51.666666666666686" height="18"/>
+                                        <rect key="frame" x="310" y="0.0" width="51.666666666666686" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -122,40 +87,129 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="Yc7-4W-WQ6">
-                                <rect key="frame" x="37" y="93" width="320" height="216"/>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Je-ge-txd">
+                                <rect key="frame" x="36.333333333333343" y="94" width="320" height="216"/>
                                 <connections>
-                                    <action selector="datePicker_ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="IlS-tP-SO1"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="98C-sZ-Ee8"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="EET-gh-XcU"/>
+                                </connections>
+                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eT-Of-WSy">
+                                <rect key="frame" x="15.333333333333343" y="59" width="361.66666666666663" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loQ-qm-N74">
+                                        <rect key="frame" x="322" y="0.3333333333333357" width="39.666666666666686" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
+                                        <connections>
+                                            <action selector="nextMonthButton_TUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uwo-Ss-JhS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alB-UF-KMA">
+                                        <rect key="frame" x="117" y="1" width="128" height="33.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="$month $year">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="chooseMonthAndYearButton_TUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T9h-Mk-ET8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yf-ds-sYi">
+                                        <rect key="frame" x="0.0" y="0.3333333333333357" width="39.666666666666664" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                                        <connections>
+                                            <action selector="previousMonthButton_TUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G5u-SN-r0X"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="7yf-ds-sYi" firstAttribute="leading" secondItem="5eT-Of-WSy" secondAttribute="leading" id="2hX-o2-57g"/>
+                                    <constraint firstAttribute="height" constant="35" id="RRz-2V-UTh"/>
+                                    <constraint firstItem="alB-UF-KMA" firstAttribute="centerY" secondItem="5eT-Of-WSy" secondAttribute="centerY" id="Uyx-x9-Ol4"/>
+                                    <constraint firstItem="7yf-ds-sYi" firstAttribute="centerY" secondItem="5eT-Of-WSy" secondAttribute="centerY" id="Z0v-fE-3i4"/>
+                                    <constraint firstAttribute="trailing" secondItem="loQ-qm-N74" secondAttribute="trailing" id="b5f-Yj-zlZ"/>
+                                    <constraint firstItem="alB-UF-KMA" firstAttribute="centerX" secondItem="5eT-Of-WSy" secondAttribute="centerX" id="mEN-mD-UfI"/>
+                                    <constraint firstItem="loQ-qm-N74" firstAttribute="centerY" secondItem="5eT-Of-WSy" secondAttribute="centerY" id="rEJ-MY-GiQ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRm-xV-v8i">
+                                <rect key="frame" x="15.333333333333336" y="448" width="104.66666666666666" height="19.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ga-Mq-da3">
+                                <rect key="frame" x="268.33333333333331" y="448" width="108.66666666666669" height="19.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="lCq-YZ-q3B">
+                                <rect key="frame" x="15.333333333333329" y="475.33333333333331" width="127.99999999999999" height="34.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="cLE-Yu-bSi"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="minimumDatePicker_ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="wFs-WE-33E"/>
                                 </connections>
                             </datePicker>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="wCH-TC-SXd">
-                                <rect key="frame" x="1" y="522" width="393" height="237"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="y4W-0y-2hL">
+                                <rect key="frame" x="251" y="475.33333333333331" width="126" height="34.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="qUS-Lz-pph"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="maximumDatePicker_ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="dv5-AL-6VV"/>
+                                </connections>
                             </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected date: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmz-ct-VZq">
+                                <rect key="frame" x="15.333333333333343" y="416" width="361.66666666666663" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="LCK-CP-sUE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="02O-Nh-rhb"/>
-                            <constraint firstItem="kiQ-1Y-aCa" firstAttribute="top" secondItem="VKr-vD-Xlb" secondAttribute="bottom" constant="10" id="9Ii-be-gLe"/>
-                            <constraint firstItem="Yc7-4W-WQ6" firstAttribute="centerX" secondItem="LCK-CP-sUE" secondAttribute="centerX" id="B97-P2-kIl"/>
-                            <constraint firstItem="VKr-vD-Xlb" firstAttribute="trailing" secondItem="LCK-CP-sUE" secondAttribute="trailing" id="D6t-fN-jWw"/>
+                            <constraint firstItem="5eT-Of-WSy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15.333333333333343" id="0bo-29-mFV"/>
+                            <constraint firstItem="qRm-xV-v8i" firstAttribute="top" secondItem="kiQ-1Y-aCa" secondAttribute="bottom" constant="50" id="2BO-xT-tSc"/>
+                            <constraint firstItem="5Je-ge-txd" firstAttribute="centerX" secondItem="5eT-Of-WSy" secondAttribute="centerX" id="5Vx-Au-aOb"/>
+                            <constraint firstItem="nmz-ct-VZq" firstAttribute="leading" secondItem="kiQ-1Y-aCa" secondAttribute="leading" id="6TQ-bi-A9I"/>
+                            <constraint firstItem="kiQ-1Y-aCa" firstAttribute="top" secondItem="VKr-vD-Xlb" secondAttribute="bottom" constant="8" id="9Ii-be-gLe"/>
+                            <constraint firstItem="VKr-vD-Xlb" firstAttribute="top" secondItem="5eT-Of-WSy" secondAttribute="bottom" constant="8" id="Dfg-Cd-qYD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5eT-Of-WSy" secondAttribute="trailing" constant="16" id="ESG-3w-ApF"/>
+                            <constraint firstItem="lCq-YZ-q3B" firstAttribute="top" secondItem="qRm-xV-v8i" secondAttribute="bottom" constant="8" symbolic="YES" id="Es6-xO-t7R"/>
                             <constraint firstItem="kiQ-1Y-aCa" firstAttribute="leading" secondItem="VKr-vD-Xlb" secondAttribute="leading" id="OA1-gu-8fH"/>
-                            <constraint firstItem="VKr-vD-Xlb" firstAttribute="leading" secondItem="LCK-CP-sUE" secondAttribute="leading" id="Wdp-7c-XkX"/>
-                            <constraint firstItem="VKr-vD-Xlb" firstAttribute="top" secondItem="LCK-CP-sUE" secondAttribute="bottom" constant="10" id="cDy-Fs-nf2"/>
-                            <constraint firstItem="LCK-CP-sUE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nXJ-70-DxN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LCK-CP-sUE" secondAttribute="trailing" constant="16" id="oAe-VN-ZcI"/>
-                            <constraint firstItem="Yc7-4W-WQ6" firstAttribute="top" secondItem="LCK-CP-sUE" secondAttribute="bottom" id="tZ5-Xb-lVD"/>
+                            <constraint firstItem="nmz-ct-VZq" firstAttribute="top" secondItem="kiQ-1Y-aCa" secondAttribute="bottom" constant="18" id="Waf-Ai-lMr"/>
+                            <constraint firstItem="y4W-0y-2hL" firstAttribute="trailing" secondItem="5Ga-Mq-da3" secondAttribute="trailing" id="a8H-iI-Z3W"/>
+                            <constraint firstItem="qRm-xV-v8i" firstAttribute="leading" secondItem="kiQ-1Y-aCa" secondAttribute="leading" id="cRh-RH-mMM"/>
+                            <constraint firstItem="VKr-vD-Xlb" firstAttribute="trailing" secondItem="5eT-Of-WSy" secondAttribute="trailing" id="kae-H0-NaB"/>
+                            <constraint firstItem="VKr-vD-Xlb" firstAttribute="leading" secondItem="5eT-Of-WSy" secondAttribute="leading" id="lQs-bO-a0l"/>
+                            <constraint firstItem="5eT-Of-WSy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="p7o-O8-w5i"/>
+                            <constraint firstItem="lCq-YZ-q3B" firstAttribute="leading" secondItem="qRm-xV-v8i" secondAttribute="leading" id="pFc-zG-XEw"/>
+                            <constraint firstItem="5Ga-Mq-da3" firstAttribute="trailing" secondItem="kiQ-1Y-aCa" secondAttribute="trailing" id="sbE-hI-sxd"/>
+                            <constraint firstItem="y4W-0y-2hL" firstAttribute="top" secondItem="5Ga-Mq-da3" secondAttribute="bottom" constant="8" symbolic="YES" id="vd8-h3-X66"/>
                             <constraint firstItem="kiQ-1Y-aCa" firstAttribute="trailing" secondItem="VKr-vD-Xlb" secondAttribute="trailing" id="w1T-3A-WsU"/>
+                            <constraint firstItem="5Je-ge-txd" firstAttribute="top" secondItem="5eT-Of-WSy" secondAttribute="bottom" id="wGZ-bE-A0Z"/>
+                            <constraint firstItem="5Ga-Mq-da3" firstAttribute="top" secondItem="qRm-xV-v8i" secondAttribute="top" id="xhg-4x-Iet"/>
+                            <constraint firstItem="nmz-ct-VZq" firstAttribute="trailing" secondItem="kiQ-1Y-aCa" secondAttribute="trailing" id="y6A-br-EYw"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="calendarCV" destination="kiQ-1Y-aCa" id="OLK-Mc-zan"/>
-                        <outlet property="datePicker" destination="Yc7-4W-WQ6" id="f5V-rh-tci"/>
+                        <outlet property="datePickerView" destination="5Je-ge-txd" id="Xub-qV-xC4"/>
                         <outlet property="daysStackView" destination="VKr-vD-Xlb" id="1MT-A1-SYS"/>
-                        <outlet property="monthAndYearButton" destination="gme-8g-uye" id="eTg-cA-fvC"/>
-                        <outlet property="nextMonthButton" destination="J13-IU-94v" id="jaL-Xa-2DW"/>
-                        <outlet property="previousMonthButton" destination="pXq-Wn-UgQ" id="kji-pd-fb0"/>
+                        <outlet property="maximumDatePicker" destination="y4W-0y-2hL" id="1ge-A2-ca2"/>
+                        <outlet property="minimumDatePicker" destination="lCq-YZ-q3B" id="iHQ-Sa-Pqg"/>
+                        <outlet property="monthAndYearButton" destination="alB-UF-KMA" id="fxd-dK-f63"/>
+                        <outlet property="nextMonthButton" destination="loQ-qm-N74" id="DrG-Qm-lmS"/>
+                        <outlet property="previousMonthButton" destination="7yf-ds-sYi" id="Oav-vd-8tX"/>
+                        <outlet property="selectedDateLabel" destination="nmz-ct-VZq" id="i8p-gh-5IG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
