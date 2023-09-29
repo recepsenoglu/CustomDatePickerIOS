@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEA8FC5E2AC6F5E4008A1013 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CEE0114D2ABD7EE200C68803 /* CustomDatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomDatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE011502ABD7EE200C68803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEE011522ABD7EE200C68803 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,9 +52,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEA8FC5F2AC6FF1F008A1013 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		CEE011442ABD7EE200C68803 = {
 			isa = PBXGroup;
 			children = (
+				CEA8FC5F2AC6FF1F008A1013 /* Screenshots */,
+				CEA8FC5E2AC6F5E4008A1013 /* README.md */,
 				CEE0114F2ABD7EE200C68803 /* CustomDatePicker */,
 				CEE0114E2ABD7EE200C68803 /* Products */,
 			);
