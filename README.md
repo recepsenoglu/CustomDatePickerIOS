@@ -11,7 +11,7 @@ You can set the minimum and maximum dates that can be selected. It also has a de
 
 | Storyboard | Preview..... | Preview..... |
 | :-: | :-: | :-: |
-<img src= "Screenshots/storyboard.png" width = 300> | <img src= "Screenshots/datePicker.png" width = 300> | <img src= "Screenshots/pickerView.png" width = 300> | 
+<img src= "Screenshots/storyboard.png" width = 300> | <img src= "Screenshots/datepicker.png" width = 300> | <img src= "Screenshots/pickerview.png" width = 300> | 
 
 
 ## License
